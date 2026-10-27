@@ -3,8 +3,8 @@
 Exemplo original em Python, somente biblioteca padrão, com duas aplicações demonstradas: preparar tabelas para um modelo em estrela e percorrer a origem incrementalmente com generators.
 
 ```console
-python examples/powerbi_star/prepare_model.py examples/powerbi_star/amostra.csv examples/powerbi_star/modelo
-python -m unittest discover -s examples/powerbi_star -p "test_*.py" -v
+python prepare_model.py amostra.csv saida-modelo
+python -m unittest discover -s . -p "test_*.py" -v
 ```
 
 Escolha uma pasta de saída que ainda não exista. O programa preserva a entrada, rejeita contratos inválidos e só entrega a pasta final depois da geração. `summary.json` traz contagem, soma em centavos e hash da origem.
@@ -38,3 +38,8 @@ Formate como moeda conforme o contexto. Resultado esperado para toda a amostra: 
 Testes verificam soma, grão, chaves válidas, datas contínuas, erro tardio no generator, entradas inválidas e preservação da origem/saída existente.
 
 Referências: [Microsoft — Star schema](https://learn.microsoft.com/en-us/power-bi/guidance/star-schema), [Python — generators](https://docs.python.org/3/howto/functional.html#generators) e [Real Python — generators](https://realpython.com/introduction-to-python-generators/). Implementação própria; licença MIT em `LICENSE` nesta pasta.
+
+
+## Projeto independente
+
+Este código foi separado do ExcelFlow para manter um escopo próprio. O histórico da pasta foi preservado na extração com Git. O projeto usa somente a biblioteca padrão do Python; os comandos acima devem ser executados na raiz deste repositório.
