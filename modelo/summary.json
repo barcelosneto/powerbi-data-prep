@@ -1,0 +1,11 @@
+{
+  "rows": 6,
+  "amount_cents": 25100,
+  "categories": 2,
+  "products": 3,
+  "source_sha256": "a543113b2ff1c759e4f1a7ecb702f47772857b3e88980758081e4197cf236339",
+  "date_start": "2026-10-01",
+  "date_end": "2026-10-05",
+  "grain": "um registro por movimento",
+  "data": "fictitious sample when using amostra.csv"
+}
